@@ -3,108 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Dalvin Vinoth Kumar | Researcher in Deep Learning & IoT</title>
+    <title>Sweta Sati | Master's in Economics - Christ University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f4f4f4;
             color: #333;
         }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #222;
+        /* Header */
+        header {
+            background-color: #2C3E50;
             color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            padding: 20px 0;
             text-align: center;
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            color: white;
         }
-        .hero h1 {
-            font-size: 3em;
+        header h1 {
             margin: 0;
+            font-size: 3em;
         }
-        .hero h2 {
-            font-size: 1.5em;
-            margin-top: 10px;
+        header p {
+            font-size: 1.2em;
             font-weight: 300;
         }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #007bff;
+        /* Navbar */
+        nav {
+            background-color: #34495E;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 15px 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #16A085;
+        }
+        /* Hero Section */
+        .hero {
+            background: url('your-image.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        .hero p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        /* Main Content */
+        .content {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .content h2 {
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 30px;
+        }
+        /* Footer */
+        footer {
+            background-color: #34495E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
             color: white;
             text-decoration: none;
             font-size: 1.2em;
-            margin-top: 20px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
         }
-        .btn:hover {
-            background: #0056b3;
+        footer a:hover {
+            color: #1ABC9C;
         }
-        .container {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            .hero h2 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <h3>Dr. Dalvin Vinoth Kumar</h3>
+
+    <!-- Header -->
+    <header>
+        <h1>Sweta Sati</h1>
+        <p>Master's in Economics | Christ University</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    
+
+    <!-- Hero Section -->
     <section class="hero">
-        <h1>Dr. Dalvin Vinoth Kumar</h1>
-        <h2>Researcher in Deep Learning & IoT</h2>
-        <a href="#" class="btn">View Research</a>
+        <div>
+            <h2>Welcome to My Personal Website</h2>
+            <p>Explore my journey in economics and my research at Christ University</p>
+        </div>
     </section>
-    
-    <div class="container">
-        <section>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About Me Section -->
+        <section id="about">
             <h2>About Me</h2>
-            <p>Dedicated researcher specializing in Deep Learning and IoT, with a strong focus on Medical Image Analytics.</p>
+            <img src="sweta-image.jpg" alt="Sweta Sati">
+            <p>Hi! I'm Sweta Sati, currently pursuing my Master's in Economics at Christ University. I am passionate about understanding global economic trends and their impacts on societies. I specialize in economic analysis, econometrics, and data-driven research.</p>
         </section>
 
-        <section>
-            <h2>Research Interests</h2>
+        <!-- Research Section -->
+        <section id="research">
+            <h2>My Research Interests</h2>
+            <p>My research interests include:</p>
             <ul>
-                <li>Deep Learning</li>
-                <li>Internet of Things (IoT)</li>
-                <li>Medical Image Analytics</li>
+                <li>Macroeconomics and Global Economics</li>
+                <li>Economic Development and Policy</li>
+                <li>Data Analysis and Econometrics</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Publications</h2>
-            <p>Explore my latest research papers on Deep Learning and IoT applications.</p>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to discuss my work or get in touch, feel free to reach out.</p>
+            <p>Email: <a href="mailto:sweta.sati@email.com">sweta.sati@email.com</a></p>
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sweta Sati. All Rights Reserved.</p>
+        <p><a href="https://www.christuniversity.in" target="_blank">Christ University</a></p>
+    </footer>
+
 </body>
 </html>
